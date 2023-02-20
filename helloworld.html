@@ -1,4 +1,4 @@
-<!DOCTYPE hml>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 
 <!--
@@ -14,9 +14,9 @@ stock images used: (https://pixabay.com/photos/fox-snow-forest-winter-cold-58448
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
-	<body class="center">
+	<body class="center" onload="randomizeStart()">
 	
-		<img id="vulpes-lagopus" class="background-image" src="assets/images/fox-gb22281a66_1920.jpg" alt="Background Forest">
+		
 		
 		<header class="hello-world">
 			
@@ -29,18 +29,20 @@ stock images used: (https://pixabay.com/photos/fox-snow-forest-winter-cold-58448
 		<main>
 		
 			<div class="background-image">
+				<img id="vulpes-lagopus" class="nuke" src="assets/images/fox-gb22281a66_1920.jpg" alt="Snowy Fox">
 				<img id="otocyon" class="nuke" src="assets/images/49697828656_0aea963a89_k.jpg" alt="Island Fox">
 				<img id="urocyon" class="nuke" src="assets/images/2530710866_f7d249a162_k.jpg" alt="Bat-eared Fox">
+				<img id="starter-bg" class="nuke" src="assets/images/fox-gb22281a66_1920.jpg">
 			</div>
 			
 			
-			<h1 id="dummy" class="text-block">Enter the scientific name of the red fox below</h1>
+			<h1 id="dummy" class="text-block">Enter the scientific name of any red fox to contiune</h1>
 			
 			<form>
 				<input type="text" required maxlength="15" pattern="/^[a-z ]+$/i" id="answer">
 			</form>
-			<button type="button" onclick="myFunction()">Kon</button>
-			<button type="button" onclick="nukeImages()">Fade</button>
+			
+			<button type="button" onclick="myFunction()">Submit</button>
 		
 		</main>
 
